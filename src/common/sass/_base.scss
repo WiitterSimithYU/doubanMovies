@@ -1,0 +1,24 @@
+$green: rgb(82, 177, 56);
+$title: #464c5b;
+$content: #657180;
+$border: #d7dde4;
+$background: #f5f7f9;
+
+@mixin flex-center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// rotate
+@keyframes rotate {
+    0% {
+        transform: rotate(0)
+    }
+    100% {
+        transform: rotate(-360deg)
+    }
+}
+.rotate {
+    animation: rotate .5s linear infinite;
+}
